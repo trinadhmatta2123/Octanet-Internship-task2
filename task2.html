@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="oct.css">
+    <title>Task Manager</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <div id="task-list">
+            <!-- Task items will be dynamically added here -->
+        </div>
+        <div class="add-task">
+            <input type="text" id="task-input" placeholder="Add a new task">
+            <select id="priority-select">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <input type="date" id="deadline-input">
+            <textarea id="description-input" placeholder="Task description"></textarea>
+            <select id="status-select">
+                <option value="to-do">To Do</option>
+                <option value="in-progress">In Progress</option>
+                <option value="completed">Completed</option>
+            </select>
+            <input type="text" id="assignee-input" placeholder="Assignee">
+            <input type="number" id="estimated-hours-input" placeholder="Estimated Hours">
+            <input type="number" id="actual-hours-input" placeholder="Actual Hours">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+    </div>
+    <script src="octa.js"></script>
+</body>
+</html>
